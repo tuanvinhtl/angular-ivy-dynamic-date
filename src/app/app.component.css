@@ -1,0 +1,44 @@
+.calendar {
+  width: 100%;
+  height: 300px;
+  border: red 1px solid;
+  overflow-x: scroll;
+}
+.week {
+  border: red 1px solid;
+  flex-direction: column;
+  display: inline-block;
+  flex-wrap: nowrap;
+  font-size: 12px;
+  margin: 5px 2px;
+}
+
+.weeks {
+  overflow-x: scroll;
+  flex-wrap: unset;
+  display: flex;
+  position: relative;
+}
+.day:nth-child(even) {
+  background-color: rgba(162, 249, 252, 0.5);
+}
+.days {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.day {
+  margin: 5px;
+  padding: 3px;
+}
+.order-id {
+  height: 30px;
+  border: red 1px solid;
+  width: 100%;
+  position: absolute;
+}
+
+.week span {
+  text-align: center;
+  display: block;
+}

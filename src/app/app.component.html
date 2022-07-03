@@ -9,7 +9,7 @@
           {{ day | date: 'shortDate' }}
         </th>
       </tr>
-      <tr *ngFor="let booking of booking_order">
+      <tr *ngFor="let booking of booking_order" class="time-slot">
         <th class="heading-left">{{ booking.order_id }}</th>
         <td
           style="min-width:70px"
@@ -19,6 +19,7 @@
         >
           {{ day | date: 'shortTime' }}
         </td>
+        <div class="overlay-slot"></div>
       </tr>
     </tbody>
   </table>

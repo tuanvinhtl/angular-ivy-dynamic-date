@@ -349,6 +349,8 @@ export class AppComponent implements AfterViewInit {
       calendar.push(moment(startWeek).add(week + 1, 'day'));
     }
     this.calendar = calendar;
+
+    console.log(moment(this.calendar[0]).unix());
     console.log(this.calendar);
   }
 

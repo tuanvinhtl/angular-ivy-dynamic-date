@@ -11,7 +11,7 @@
       </tr>
       <ng-container *ngFor="let booking of booking_order">
         <tr class="time-slot" appRender [range]="booking">
-          <th class="heading-left">{{ booking.order_id }}</th>
+          <th class="heading-left">{{ booking.group_id }}</th>
           <td
             style="min-width:70px"
             *ngFor="let day of calendar"

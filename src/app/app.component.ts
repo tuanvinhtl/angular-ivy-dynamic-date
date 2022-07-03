@@ -22,49 +22,319 @@ export class AppComponent implements AfterViewInit {
 
   booking_order = [
     {
-      order_id: 'NC-0012',
-      start_time: '2022-07-10T17:00:00.000Z',
-      end_tine: '2022-07-12T17:00:00.000Z',
+      group_id: 'NC-0012',
+      order: [
+        {
+          order_id: 'ORDER-001',
+          start_time: '2022-07-10T17:00:00.000Z',
+          end_tine: '2022-07-12T17:00:00.000Z',
+        },
+        {
+          order_id: 'ORDER-0016',
+          start_time: '2022-07-10T17:00:00.000Z',
+          end_tine: '2022-07-12T17:00:00.000Z',
+        },
+        {
+          order_id: 'ORDER-0012',
+          start_time: '2022-07-10T17:00:00.000Z',
+          end_tine: '2022-07-12T17:00:00.000Z',
+        },
+        {
+          order_id: 'ORDER-0015',
+          start_time: '2022-07-10T17:00:00.000Z',
+          end_tine: '2022-07-12T17:00:00.000Z',
+        },
+        {
+          order_id: 'ORDER-004',
+          start_time: '2022-07-10T17:00:00.000Z',
+          end_tine: '2022-07-12T17:00:00.000Z',
+        },
+        {
+          order_id: 'ORDER-003',
+          start_time: '2022-07-10T17:00:00.000Z',
+          end_tine: '2022-07-12T17:00:00.000Z',
+        },
+      ],
     },
     {
-      order_id: 'NC-0013',
-      start_time: '2022-07-10T17:00:00.000Z',
-      end_tine: '2022-07-12T17:00:00.000Z',
+      group_id: 'NC-0013',
+      order: [
+        {
+          order_id: 'ORDER-001',
+          start_time: '2022-07-10T17:00:00.000Z',
+          end_tine: '2022-07-12T17:00:00.000Z',
+        },
+        {
+          order_id: 'ORDER-0016',
+          start_time: '2022-07-10T17:00:00.000Z',
+          end_tine: '2022-07-12T17:00:00.000Z',
+        },
+        {
+          order_id: 'ORDER-0012',
+          start_time: '2022-07-10T17:00:00.000Z',
+          end_tine: '2022-07-12T17:00:00.000Z',
+        },
+        {
+          order_id: 'ORDER-0015',
+          start_time: '2022-07-10T17:00:00.000Z',
+          end_tine: '2022-07-12T17:00:00.000Z',
+        },
+        {
+          order_id: 'ORDER-004',
+          start_time: '2022-07-10T17:00:00.000Z',
+          end_tine: '2022-07-12T17:00:00.000Z',
+        },
+        {
+          order_id: 'ORDER-003',
+          start_time: '2022-07-10T17:00:00.000Z',
+          end_tine: '2022-07-12T17:00:00.000Z',
+        },
+      ],
     },
     {
-      order_id: 'NC-0014',
-      start_time: '2022-07-10T17:00:00.000Z',
-      end_tine: '2022-07-12T17:00:00.000Z',
+      group_id: 'NC-0014',
+      order: [
+        {
+          order_id: 'ORDER-001',
+          start_time: '2022-07-10T17:00:00.000Z',
+          end_tine: '2022-07-12T17:00:00.000Z',
+        },
+        {
+          order_id: 'ORDER-0016',
+          start_time: '2022-07-10T17:00:00.000Z',
+          end_tine: '2022-07-12T17:00:00.000Z',
+        },
+        {
+          order_id: 'ORDER-0012',
+          start_time: '2022-07-10T17:00:00.000Z',
+          end_tine: '2022-07-12T17:00:00.000Z',
+        },
+        {
+          order_id: 'ORDER-0015',
+          start_time: '2022-07-10T17:00:00.000Z',
+          end_tine: '2022-07-12T17:00:00.000Z',
+        },
+        {
+          order_id: 'ORDER-004',
+          start_time: '2022-07-10T17:00:00.000Z',
+          end_tine: '2022-07-12T17:00:00.000Z',
+        },
+        {
+          order_id: 'ORDER-003',
+          start_time: '2022-07-10T17:00:00.000Z',
+          end_tine: '2022-07-12T17:00:00.000Z',
+        },
+      ],
     },
     {
-      order_id: 'NC-0015',
-      start_time: '2022-07-10T17:00:00.000Z',
-      end_tine: '2022-07-12T17:00:00.000Z',
+      group_id: 'NC-0015',
+      order: [
+        {
+          order_id: 'ORDER-001',
+          start_time: '2022-07-10T17:00:00.000Z',
+          end_tine: '2022-07-12T17:00:00.000Z',
+        },
+        {
+          order_id: 'ORDER-0016',
+          start_time: '2022-07-10T17:00:00.000Z',
+          end_tine: '2022-07-12T17:00:00.000Z',
+        },
+        {
+          order_id: 'ORDER-0012',
+          start_time: '2022-07-10T17:00:00.000Z',
+          end_tine: '2022-07-12T17:00:00.000Z',
+        },
+        {
+          order_id: 'ORDER-0015',
+          start_time: '2022-07-10T17:00:00.000Z',
+          end_tine: '2022-07-12T17:00:00.000Z',
+        },
+        {
+          order_id: 'ORDER-004',
+          start_time: '2022-07-10T17:00:00.000Z',
+          end_tine: '2022-07-12T17:00:00.000Z',
+        },
+        {
+          order_id: 'ORDER-003',
+          start_time: '2022-07-10T17:00:00.000Z',
+          end_tine: '2022-07-12T17:00:00.000Z',
+        },
+      ],
     },
     {
-      order_id: 'NC-0016',
-      start_time: '2022-07-10T17:00:00.000Z',
-      end_tine: '2022-07-12T17:00:00.000Z',
+      group_id: 'NC-0016',
+      order: [
+        {
+          order_id: 'ORDER-001',
+          start_time: '2022-07-10T17:00:00.000Z',
+          end_tine: '2022-07-12T17:00:00.000Z',
+        },
+        {
+          order_id: 'ORDER-0016',
+          start_time: '2022-07-10T17:00:00.000Z',
+          end_tine: '2022-07-12T17:00:00.000Z',
+        },
+        {
+          order_id: 'ORDER-0012',
+          start_time: '2022-07-10T17:00:00.000Z',
+          end_tine: '2022-07-12T17:00:00.000Z',
+        },
+        {
+          order_id: 'ORDER-0015',
+          start_time: '2022-07-10T17:00:00.000Z',
+          end_tine: '2022-07-12T17:00:00.000Z',
+        },
+        {
+          order_id: 'ORDER-004',
+          start_time: '2022-07-10T17:00:00.000Z',
+          end_tine: '2022-07-12T17:00:00.000Z',
+        },
+        {
+          order_id: 'ORDER-003',
+          start_time: '2022-07-10T17:00:00.000Z',
+          end_tine: '2022-07-12T17:00:00.000Z',
+        },
+      ],
     },
     {
-      order_id: 'NC-0017',
-      start_time: '2022-07-10T17:00:00.000Z',
-      end_tine: '2022-07-12T17:00:00.000Z',
+      group_id: 'NC-0017',
+      order: [
+        {
+          order_id: 'ORDER-001',
+          start_time: '2022-07-10T17:00:00.000Z',
+          end_tine: '2022-07-12T17:00:00.000Z',
+        },
+        {
+          order_id: 'ORDER-0016',
+          start_time: '2022-07-10T17:00:00.000Z',
+          end_tine: '2022-07-12T17:00:00.000Z',
+        },
+        {
+          order_id: 'ORDER-0012',
+          start_time: '2022-07-10T17:00:00.000Z',
+          end_tine: '2022-07-12T17:00:00.000Z',
+        },
+        {
+          order_id: 'ORDER-0015',
+          start_time: '2022-07-10T17:00:00.000Z',
+          end_tine: '2022-07-12T17:00:00.000Z',
+        },
+        {
+          order_id: 'ORDER-004',
+          start_time: '2022-07-10T17:00:00.000Z',
+          end_tine: '2022-07-12T17:00:00.000Z',
+        },
+        {
+          order_id: 'ORDER-003',
+          start_time: '2022-07-10T17:00:00.000Z',
+          end_tine: '2022-07-12T17:00:00.000Z',
+        },
+      ],
     },
     {
-      order_id: 'NC-0018',
-      start_time: '2022-07-10T17:00:00.000Z',
-      end_tine: '2022-07-12T17:00:00.000Z',
+      group_id: 'NC-0018',
+      order: [
+        {
+          order_id: 'ORDER-001',
+          start_time: '2022-07-10T17:00:00.000Z',
+          end_tine: '2022-07-12T17:00:00.000Z',
+        },
+        {
+          order_id: 'ORDER-0016',
+          start_time: '2022-07-10T17:00:00.000Z',
+          end_tine: '2022-07-12T17:00:00.000Z',
+        },
+        {
+          order_id: 'ORDER-0012',
+          start_time: '2022-07-10T17:00:00.000Z',
+          end_tine: '2022-07-12T17:00:00.000Z',
+        },
+        {
+          order_id: 'ORDER-0015',
+          start_time: '2022-07-10T17:00:00.000Z',
+          end_tine: '2022-07-12T17:00:00.000Z',
+        },
+        {
+          order_id: 'ORDER-004',
+          start_time: '2022-07-10T17:00:00.000Z',
+          end_tine: '2022-07-12T17:00:00.000Z',
+        },
+        {
+          order_id: 'ORDER-003',
+          start_time: '2022-07-10T17:00:00.000Z',
+          end_tine: '2022-07-12T17:00:00.000Z',
+        },
+      ],
     },
     {
-      order_id: 'NC-0019',
-      start_time: '2022-07-10T17:00:00.000Z',
-      end_tine: '2022-07-12T17:00:00.000Z',
+      group_id: 'NC-0019',
+      order: [
+        {
+          order_id: 'ORDER-001',
+          start_time: '2022-07-10T17:00:00.000Z',
+          end_tine: '2022-07-12T17:00:00.000Z',
+        },
+        {
+          order_id: 'ORDER-0016',
+          start_time: '2022-07-10T17:00:00.000Z',
+          end_tine: '2022-07-12T17:00:00.000Z',
+        },
+        {
+          order_id: 'ORDER-0012',
+          start_time: '2022-07-10T17:00:00.000Z',
+          end_tine: '2022-07-12T17:00:00.000Z',
+        },
+        {
+          order_id: 'ORDER-0015',
+          start_time: '2022-07-10T17:00:00.000Z',
+          end_tine: '2022-07-12T17:00:00.000Z',
+        },
+        {
+          order_id: 'ORDER-004',
+          start_time: '2022-07-10T17:00:00.000Z',
+          end_tine: '2022-07-12T17:00:00.000Z',
+        },
+        {
+          order_id: 'ORDER-003',
+          start_time: '2022-07-10T17:00:00.000Z',
+          end_tine: '2022-07-12T17:00:00.000Z',
+        },
+      ],
     },
     {
-      order_id: 'NC-0019',
-      start_time: '2022-07-10T17:00:00.000Z',
-      end_tine: '2022-07-12T17:00:00.000Z',
+      group_id: 'NC-0019',
+      order: [
+        {
+          order_id: 'ORDER-001',
+          start_time: '2022-07-10T17:00:00.000Z',
+          end_tine: '2022-07-12T17:00:00.000Z',
+        },
+        {
+          order_id: 'ORDER-0016',
+          start_time: '2022-07-10T17:00:00.000Z',
+          end_tine: '2022-07-12T17:00:00.000Z',
+        },
+        {
+          order_id: 'ORDER-0012',
+          start_time: '2022-07-10T17:00:00.000Z',
+          end_tine: '2022-07-12T17:00:00.000Z',
+        },
+        {
+          order_id: 'ORDER-0015',
+          start_time: '2022-07-10T17:00:00.000Z',
+          end_tine: '2022-07-12T17:00:00.000Z',
+        },
+        {
+          order_id: 'ORDER-004',
+          start_time: '2022-07-10T17:00:00.000Z',
+          end_tine: '2022-07-12T17:00:00.000Z',
+        },
+        {
+          order_id: 'ORDER-003',
+          start_time: '2022-07-10T17:00:00.000Z',
+          end_tine: '2022-07-12T17:00:00.000Z',
+        },
+      ],
     },
   ];
 

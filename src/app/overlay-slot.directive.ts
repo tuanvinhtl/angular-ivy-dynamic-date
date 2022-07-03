@@ -1,10 +1,8 @@
 import { Directive, Input, TemplateRef, ViewContainerRef } from '@angular/core';
 
-@Directive({ selector: '[overlay-slot]' })
+@Directive({ selector: '[appRender]' })
 export class OverlaySlotDirective {
-  // @Input() set appUnless(condition) {
-  //   this.viewContainer.clear();
-  // }
+  @Input() set appUnless(condition) {}
   constructor(
     private templateRef: TemplateRef<any>,
     private viewContainer: ViewContainerRef

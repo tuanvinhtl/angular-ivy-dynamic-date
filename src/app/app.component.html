@@ -9,18 +9,20 @@
           {{ day | date: 'shortDate' }}
         </th>
       </tr>
-      <tr *ngFor="let booking of booking_order" class="time-slot">
-        <th class="heading-left">{{ booking.order_id }}</th>
-        <td
-          style="min-width:70px"
-          *ngFor="let day of calendar"
-          [attr.id]="day"
-          class="date-slot"
-        >
-          {{ day | date: 'shortTime' }}
-        </td>
-        <div class="overlay-slot"></div>
-      </tr>
+      <ng-container *ngFor="let booking of booking_order">
+        <tr class="time-slot" appRender="null">
+          <th class="heading-left">{{ booking.order_id }}</th>
+          <td
+            style="min-width:70px"
+            *ngFor="let day of calendar"
+            [attr.id]="day"
+            class="date-slot"
+          >
+            {{ day | date: 'shortTime' }}
+          </td>
+        </tr>
+      </ng-container>
+      <!-- <div class="overlay-slot"></div> -->
     </tbody>
   </table>
 </div>

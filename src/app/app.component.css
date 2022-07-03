@@ -11,14 +11,24 @@
   font-size: 12px;
   margin: 5px 2px;
 }
-.overlay-slot {
+/* .overlay-slot {
   width: 300px;
   height: 100%;
   position: absolute;
   top: 0;
   left: 71px;
   background: rgba(73, 250, 57, 0.582);
+} */
+
+::ng-deep .overlay-slot {
+  /* width: 300px; */
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(73, 250, 57, 0.582);
 }
+
 .time-slot {
   position: relative;
 }

@@ -1,5 +1,6 @@
 import { DOCUMENT } from '@angular/common';
 import {
+  AfterViewInit,
   Directive,
   ElementRef,
   Inject,
@@ -11,7 +12,7 @@ import {
 } from '@angular/core';
 
 @Directive({ selector: '[appRender]' })
-export class OverlaySlotDirective {
+export class OverlaySlotDirective implements AfterViewInit {
   @Input()
   set range(value) {
     // take a look caculate the translation x value
@@ -26,10 +27,15 @@ export class OverlaySlotDirective {
 
     child.style.cssText = cssText;
     this.renderer.appendChild(this.elementRef.nativeElement, child);
+
+    console.log(child.getBoundingClientRect());
   }
   constructor(
     private elementRef: ElementRef,
     private renderer: Renderer2,
     @Inject(DOCUMENT) private document: Document
   ) {}
+  ngAfterViewInit(): void {
+    console.log(this.elementRef.nativeElement.offsetWidth);
+  }
 }

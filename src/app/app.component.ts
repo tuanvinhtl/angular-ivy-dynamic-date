@@ -61,6 +61,11 @@ export class AppComponent implements AfterViewInit {
       start_time: '2022-07-10T17:00:00.000Z',
       end_tine: '2022-07-12T17:00:00.000Z',
     },
+    {
+      order_id: 'NC-0019',
+      start_time: '2022-07-10T17:00:00.000Z',
+      end_tine: '2022-07-12T17:00:00.000Z',
+    },
   ];
 
   constructor(private cdr: ChangeDetectorRef) {
